@@ -42,6 +42,8 @@ interface IPerson {
 ```
 **Note:** Interfaces are not to be converted to JavaScript. It’s just part of TypeScript.
 
+**See** ```1_interface.ts``` file for details
+
 ###### Optional Property
 Sometimes, we may declare an ```interface``` with excess properties but may not expect all objects to define all the given interface properties. We can have optional properties, marked with a "?". In such cases, objects of the interface may or may not define these properties.
 
@@ -55,7 +57,7 @@ interface IPerson {
   getSalary: (salary: number) => number;
 } 
 ```
-
+**See** ```1.1_interface_optional.ts``` file for details
 ###### Readonly Property
 TypeScript provides a way to mark a property as read only. This means that once a property is assigned a value, it cannot be changed!
 
@@ -70,18 +72,24 @@ interface IPerson {
   getSalary: (salary: number) => number;
 } 
 ```
+**See** ```1.2_interface_readonly.ts``` file for details
 #### Interfaces and Arrays
 ```Interface``` can define both the kind of key an array uses and the type of entry it contains. Index can be of type string or type number.
 
+**See** ```2.interface_array.ts``` file for details
 #### Interfaces and Inheritance
 An ```interface``` can be extended by other interfaces. In other words, an interface can inherit from other interface. Typescript allows an interface to inherit from multiple interfaces.
 
 Use the extends keyword to implement inheritance among interfaces.
 
+**See** ```3.interfaces_inheritance.ts``` file for details
+
 #### Interfaces and Class
 ```interface``` can be implemented with a class using ```implements``` keyword
 
 **Note** the implementing class can define extra properties and methods, but at least it must define all the members of an interface.
+
+**See** ```4.interface_class.ts``` file for details
 
 
 
